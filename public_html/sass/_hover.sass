@@ -1,0 +1,60 @@
+@media screen and (min-width: 1024px)
+	.btn
+		&:hover
+			box-shadow: inset 0 0 100px rgba(#000, 0.15)
+	.header
+		&__nav
+			ul
+				li
+					&:not(.active):not(:hover)
+						a
+							s
+								svg
+									&.fill
+										path
+											fill: #D5DCE2
+									&.stroke
+										path
+											stroke: #D5DCE2
+					a
+						&:hover
+							color: var(--accent)
+		&__office
+			&:hover
+				box-shadow: inset 0 0 100px rgba(#000, 0.15)
+		&__logout
+			&:hover
+				opacity: 0.7
+	.info
+		&__doc
+			&-item
+				&:hover
+					p
+						small
+							color: var(--black)
+	.footer
+		&__nav
+			ul
+				li
+					a
+						&:hover
+							color: var(--white)
+		&__info
+			&-link
+				a
+					&:hover
+						opacity: 1
+	.hat
+		&__item
+			&-info
+				i
+					&:hover
+						background-image: url(../img/icon-info-active.svg)
+						& + p
+							visibility: visible
+							opacity: 1
+							pointer-events: auto
+	.modal
+		&__close
+			&:hover
+				transform: rotate(90deg)

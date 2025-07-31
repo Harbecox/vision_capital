@@ -1,0 +1,1771 @@
+@font-face
+	font-family: 'ProximaNova'
+	src: url('../fonts/ProximaNova-Regular.woff2') format('woff2')
+	font-weight: 400
+@font-face
+	font-family: 'ProximaNova'
+	src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2')
+	font-weight: 600
+@font-face
+	font-family: 'ProximaNova'
+	src: url('../fonts/ProximaNova-Bold.woff2') format('woff2')
+	font-weight: 700
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	vertical-align: baseline
+
+html
+	-ms-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
+
+img, fieldset, a img
+	border: none
+
+input
+	&[type="text"], &[type="email"], &[type="tel"]
+		-webkit-appearance: none
+
+textarea
+	-webkit-appearance: none
+
+input[type="submit"], button
+	cursor: pointer
+
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner
+	padding: 0
+	border: 0
+
+textarea
+	overflow: auto
+
+input
+	margin: 0
+	padding: 0
+	border: 0
+
+button
+	margin: 0
+	padding: 0
+	border: 0
+	&:disabled
+		background: #242424
+
+sub
+	font-size: 75%
+	line-height: 0
+	position: relative
+	vertical-align: baseline
+
+sup
+	font-size: 75%
+	line-height: 0
+	position: relative
+	vertical-align: baseline
+	top: -0.5em
+
+sub
+	bottom: -0.5em
+
+a
+	text-decoration: none
+
+div, input, textarea, select, button, img, li, i, h1, h2, h3, h4, h5, h6, a, span, a:focus
+	outline: none !important
+	-webkit-tap-highlight-color: transparent
+
+div, section
+	display: block
+
+ul
+	list-style-type: none
+
+ol
+	margin: 0
+	padding: 0
+	border: 0
+	vertical-align: baseline
+
+table
+	border-spacing: 0
+	border-collapse: collapse
+
+html
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+
+*
+	-webkit-box-sizing: inherit
+	box-sizing: inherit
+
+	&:before, &:after
+		-webkit-box-sizing: inherit
+		box-sizing: inherit
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, input:-moz-placeholder, textarea:-moz-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder
+	opacity: 1
+	-webkit-transition: opacity 0.2s ease
+	-o-transition: opacity 0.2s ease
+	transition: opacity 0.2s ease
+	color: rgba(0, 0, 0, 0.5)
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder, input:focus::-moz-placeholder, textarea:focus::-moz-placeholder, input:focus:-moz-placeholder, textarea:focus:-moz-placeholder, input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder
+	opacity: 0
+	-webkit-transition: opacity 0.2s ease
+	-o-transition: opacity 0.2s ease
+	transition: opacity 0.2s ease
+
+input
+	&::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+		-webkit-appearance: none
+		margin: 0
+
+textarea
+	&::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+		-webkit-appearance: none
+		margin: 0
+
+@media (prefers-reduced-motion: reduce)
+	*
+		-webkit-transition: none !important
+		-o-transition: none !important
+		transition: none !important
+
+@media screen and (max-width: 767px)
+	*
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+button, input, textarea
+	font-family: 'ProximaNova', sans-serif
+	font-weight: 400
+	background: transparent
+
+b, strong
+	font-weight: 700
+
+svg
+	path
+		transition: fill .3s, stroke .3s
+
+html
+	overflow-x: hidden
+	overflow-y: auto	
+
+body
+	--black: #172129
+	--accent: #466BF0
+	--white: #fff
+	--gray: #999FA5
+	width: 100%
+	min-height: 100vh
+	font-family: 'ProximaNova', sans-serif
+	font-weight: 400
+	color: var(--black)
+	background: var(--white)
+	line-height: normal
+	position: relative
+	overflow-x: hidden
+
+.btn
+	display: flex
+	align-items: center
+	justify-content: center
+	text-align: center
+	height: 58px
+	padding: 0 55px
+	background: var(--accent)
+	border-radius: 6px
+	font-size: 15px
+	font-weight: 600
+	white-space: nowrap
+	user-select: none
+	cursor: pointer
+	color: var(--white)
+	transition: box-shadow .5s
+	&.white
+		background: var(--white)
+		color: #193772
+	&.blue
+		background: #DAEFFF
+		color: #58B9FF
+	i
+		float: left
+		width: 20px
+		height: auto
+		margin: auto 10px auto 0
+		img
+			display: block
+			width: 100%
+			height: auto
+
+.row
+	width: 100%
+	max-width: 1400px
+	margin: 0 auto
+	padding: 0 30px
+	&.min
+		max-width: 1340px
+
+.header
+	width: 100%
+	height: 98px
+	position: relative
+	&.mode
+		border-bottom: 1px solid #EFF1F4
+	.row
+		display: flex
+		flex-flow: wrap
+		height: 100%
+	&__logo
+		float: left
+		width: 249px
+		height: auto
+		margin: auto 0
+		img
+			display: block
+			width: 100%
+			height: auto
+	&__nav
+		position: absolute
+		left: 50%
+		top: 0
+		transform: translateX(-50%)
+		i
+			display: none
+		ul
+			float: left
+			li
+				float: left
+				width: auto
+				margin-right: 35px
+				&.active
+					position: relative
+					a
+						color: var(--black)
+					&::before
+						content: ''
+						position: absolute
+						width: 100%
+						height: 2px
+						bottom: 0
+						left: 0
+						background: var(--accent)
+				&:last-child
+					margin: 0
+				a
+					display: flex
+					height: 98px
+					align-items: center
+					white-space: nowrap
+					font-size: 15px
+					color: var(--gray)
+					text-transform: uppercase
+					transition: color .3s
+					s
+						margin: auto 12px auto 0
+						img, svg
+							display: block
+	&__humb
+		display: none
+	&__office
+		float: right
+		margin: auto 0 auto auto
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		background: #F4F6F8
+		display: flex
+		transition: box-shadow .5s
+		img
+			display: block
+			margin: auto
+	&__name
+		float: right
+		margin-left: auto
+		padding: 0 30px
+		border-left: 1px solid #EFF1F4
+		display: flex
+		align-items: center
+		font-weight: 600
+		font-size: 15px
+		color: #172129
+		i
+			float: right
+			width: 5px
+			height: 5px
+			margin-left: 5px
+			transform: translateY(-5px)
+			background: #16AB13
+			border-radius: 50%
+	&__logout
+		float: right
+		padding: 0 30px
+		border-left: 1px solid #EFF1F4
+		border-right: 1px solid #EFF1F4
+		display: flex
+		align-items: center
+		font-weight: 600
+		font-size: 15px
+		color: #EC4D4E
+		transition: opacity .3s
+		img
+			margin: auto 10px auto 0
+
+.tiser
+	width: calc(100vw - 60px)
+	height: calc(100vh - 130px)
+	margin: 0 30px
+	border-radius: 25px
+	overflow: hidden
+	position: relative
+	.row
+		height: 100%
+		display: flex
+		flex-direction: column
+		position: relative
+		z-index: 2
+	&__bg
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			z-index: 1
+			background: url(../img/tiser-bg.png) center/cover
+		img
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__title
+		width: 100%
+		margin: auto 0
+		max-width: 1060px
+	&__name
+		display: block
+		font-weight: 700
+		font-size: 64px
+		line-height: 1.15
+		color: var(--white)
+		span
+			color: #58B9FF
+	&__btn
+		display: flex
+		margin-top: 45px
+	&__info
+		padding: 65px 0
+		border-top: 1px solid rgba(#fff, 0.2)
+		display: flex
+		&-item
+			float: left
+			display: flex
+			width: 33.3333%
+			min-height: 92px
+			border-right: 1px solid rgba(#fff, 0.2)
+			&:last-child
+				border: 0
+				p
+					padding-right: 0
+			&:first-child
+				p
+					padding-left: 0
+			p
+				margin: auto 0
+				width: 100%
+				padding: 0 27px
+				color: var(--white)
+				font-size: 18px
+				line-height: 1.44
+				span
+					font-weight: 600
+					position: relative
+					&::before
+						content: ''
+						position: absolute
+						width: 100%
+						height: 55%
+						bottom: 3px
+						left: 0
+						z-index: -1
+						background: var(--accent)
+						opacity: 0.66
+
+.content
+	&.bg
+		background: #F5FAFD
+		padding: 30px 0
+	&.top
+		padding-top: 35px
+
+.cap
+	width: calc(100% - 60px)
+	margin: 0 30px
+	border-radius: 25px
+	overflow: hidden
+	padding: 15px 0
+	height: auto
+	min-height: 258px
+	position: relative
+	&__bg
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: 0
+		img
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.row
+		position: relative
+		z-index: 1
+	&__bread
+		width: 100%
+		display: flex
+		ul
+			float: left
+			li
+				float: left
+				display: flex
+				&::after
+					content: '/'
+					float: right
+					margin: 0 4px
+					font-size: 14px
+					color: #58B9FF
+				&:last-child
+					a
+						color: #58B9FF
+					&::after
+						display: none
+				a
+					display: block
+					font-size: 14px
+					color: var(--white)
+	&__title
+		display: block
+		margin-top: 55px
+		font-weight: 700
+		font-size: 54px
+		color: var(--white)
+
+.text
+	*:first-child
+		margin-top: 0
+	h1, h2, h3, h4, h5, h6
+		display: block
+		font-weight: 600
+		margin-top: 25px
+	h1
+		font-size: 40px
+	h2
+		font-size: 36px
+	h3
+		font-size: 30px
+	h4
+		font-size: 24px
+	h5
+		font-size: 18px
+	h6
+		font-size: 16px
+	a
+		color: var(--accent)
+		text-decoration: underline
+	b, strong
+		font-weight: 600
+	img
+		display: block
+		width: auto
+		height: auto
+		max-width: 100%
+		margin-top: 20px
+		border-radius: 14px
+	p
+		display: block
+		margin-top: 15px
+		font-size: 16px
+		line-height: 160%
+	ul
+		display: block
+		margin-top: 15px
+		li
+			display: block
+			padding-left: 18px
+			font-size: 16px
+			line-height: 160%
+			position: relative
+			margin-top: 4px
+			&:first-child
+				margin: 0
+			&::before
+				content: ''
+				position: absolute
+				width: 5px
+				height: 5px
+				left: 0
+				top: 14px
+				background: var(--black)
+				border-radius: 50%
+	ol
+		display: block
+		width: calc(100% - 15px)
+		margin-top: 15px
+		margin-left: 15px
+		li
+			font-size: 16px
+			line-height: 160%
+			margin-top: 4px
+			position: relative
+			&:first-child
+				margin: 0
+		ol, ul
+			margin-top: 10px !important
+	table
+		margin-top: 55px
+		width: 100%
+		tr
+			th
+				padding: 0 15px 15px 0
+				font-size: 16px
+				font-weight: 600
+				line-height: 140%
+				text-align: left
+			td
+				padding: 15px 10px 15px 0
+				font-size: 14px
+				line-height: 140%
+				border-top: 1px solid rgba(#000, 0.1)
+
+.info
+	width: 100%
+	margin-top: 55px
+	&__block
+		width: 100%
+		display: flex
+		flex-flow: wrap
+		margin-top: 70px
+		&:first-child
+			margin: 0
+		&-item
+			float: left
+			width: calc(50% - 10px)
+			&:nth-child(2n)
+				margin-left: 20px
+	&__text
+		width: 100%
+		margin-top: 15px
+		&:first-child
+			margin: 0
+	&__table
+		width: 100%
+		margin-top: 24px
+		border: 1px solid #E8EDF0
+		border-radius: 10px
+		overflow: hidden
+		&:first-child
+			margin: 0
+		&-circle
+			width: 20px
+			height: 20px
+			border-radius: 50%
+			margin: auto 0
+		&.center
+			table
+				tr
+					th, td
+						text-align: center
+		&.nowrap
+			table
+				tr
+					th, td
+						white-space: nowrap
+						&:last-child
+							text-align: right
+		table
+			width: 100%
+			tr
+				&:last-child
+					th, td
+						border-bottom: 2px solid #fff
+				th
+					background: #F3F6F9
+					padding: 12px 18px
+					font-size: 16px
+					line-height: 162%
+					border: 2px solid var(--white)
+					position: relative
+					text-align: left
+					&::before
+						content: ''
+						position: absolute
+						width: 100%
+						height: 2px
+						background: #58B9FF
+						bottom: -4px
+						left: 0
+				td
+					padding: 16px 18px
+					font-size: 15px
+					line-height: 170%
+					vertical-align: middle
+					border: 1px solid var(--white)
+					border-bottom: 1px solid #E8EDF0
+					text-align: left
+					b
+						font-weight: 600
+	&__title
+		font-size: 22px
+		font-weight: 700
+		display: block
+	&__attribute
+		width: 100%
+		margin-top: 30px
+		&-block
+			width: 100%
+			display: flex
+			flex-flow: wrap
+			margin-top: 25px
+			border-top: 1px solid #D1DDE0
+			border-bottom: 1px solid #D1DDE0
+			padding: 12px 0
+		&-list
+			float: left
+			margin: auto 0
+			width: 75%
+			li
+				float: left
+				padding-left: 15px
+				position: relative
+				font-size: 16px
+				color: #4B5053
+				margin: 10px 60px 10px 0
+				&::before
+					content: ''
+					position: absolute
+					width: 6px
+					height: 6px
+					border-radius: 50%
+					top: calc(50% - 3px)
+					left: 0
+					background: var(--accent)
+				b
+					color: #172129
+					font-weight: 600
+		&-btn
+			float: right
+			margin: auto 0 auto auto
+	&__btns
+		width: 100%
+		display: flex
+		flex-flow: wrap
+		justify-content: center
+		margin-top: 15px
+		.btn
+			margin: 10px 5px 0
+	&__doc
+		margin-top: 60px
+		&-block
+			width: calc(100% + 20px)
+			display: flex
+			flex-flow: wrap
+			margin: 10px -10px 0
+		&-item
+			float: left
+			width: calc(50% - 20px)
+			margin: 20px 10px 0
+			border-radius: 8px
+			background: #f3f6f9
+			border: 1px solid #85CCFF
+			padding: 20px 20px 20px 78px
+			position: relative
+			img
+				position: absolute
+				width: 31px
+				left: 23px
+				top: 50%
+				transform: translateY(-50%)
+			p
+				display: block
+				font-size: 16px
+				line-height: 1.5
+				color: #172129
+				transition: color .3s
+				small
+					font-size: 13px
+					color: #A9ACAE
+					transition: color .3s
+	&__team
+		width: 100%
+		margin-top: 70px
+		display: flex
+		flex-flow: wrap
+		&-item
+			float: left
+			width: 33.3333%
+		&-img
+			display: block
+			margin: 0 auto
+			position: relative
+			width: 255px
+			height: 255px
+			border-radius: 50%
+			position: relative
+			background: #D9D9D9
+			&::before
+				content: ''
+				position: absolute
+				width: calc(100% + 10px)
+				height: calc(100% + 10px)
+				left: -5px
+				top: -5px
+				border-radius: 50%
+				border: 2px solid var(--accent)
+			img
+				display: block
+				width: 100%
+				height: 100%
+				object-fit: cover
+				border-radius: 50%
+		&-name
+			display: block
+			width: 100%
+			margin-top: 20px
+			text-align: center
+			font-weight: 700
+			font-size: 18px
+		&-pos
+			display: block
+			margin-top: 10px
+			text-align: center
+			font-size: 15px
+			color: #89949A
+		&-soc
+			display: flex
+			margin-top: 15px
+			justify-content: center
+			a
+				float: left
+				margin: 0 5px
+				width: 44px
+				height: 44px
+				border-radius: 50%
+				background: #ECF0F4
+				display: flex
+				img
+					display: block
+					width: auto
+					height: auto
+					max-width: 16px
+					max-height: 16px
+					margin: auto
+	&__stat
+		width: 100%
+		margin-top: 60px
+		position: relative
+		padding: 50px 0
+		&::before
+			content: ''
+			position: absolute
+			width: 100vw
+			height: 100%
+			top: 0
+			left: calc(50% - 50vw)
+			z-index: -1
+			background: #f1f6fa
+		.info
+			&__title
+				position: relative
+				z-index: 2
+			&__table
+				table
+					border: 1px solid #E8EDF0
+		&-item
+			width: 100%
+			background: #fff
+			overflow: hidden
+			border-radius: 20px
+			margin-top: 20px
+			padding: 20px
+			img
+				display: block
+				width: 100%
+				height: auto
+
+.footer
+	width: 100%
+	margin-top: 55px
+	background: #11181E
+	&__base
+		width: 100%
+		display: flex
+		flex-flow: wrap
+		padding: 43px 0
+	&__logo
+		float: left
+		width: 249px
+		height: auto
+		img
+			display: block
+			width: 100%
+			height: auto
+	&__nav
+		float: right
+		margin: auto 0 auto auto
+		ul
+			float: left
+			li
+				float: left
+				width: auto
+				margin-right: 35px
+				&.active
+					position: relative
+					a
+						color: var(--white)
+				&:last-child
+					margin: 0
+				a
+					display: block
+					white-space: nowrap
+					font-size: 15px
+					color: #999FA5
+					text-transform: uppercase
+					transition: color .3s
+	&__info
+		width: 100%
+		padding: 28px 0
+		display: flex
+		flex-flow: wrap
+		border-top: 1px solid rgba(#fff, 0.1)
+		&-copy
+			float: left
+			margin: auto 0
+			font-size: 12px
+			color: var(--white)
+			opacity: 0.6
+		&-link
+			float: left
+			margin: auto
+			a
+				float: left
+				margin-right: 30px
+				font-size: 15px
+				color: #fff
+				text-decoration: underline
+				opacity: 0.8
+				transition: opacity .3s
+				&:last-child
+					margin: 0
+		&-contact
+			float: left
+			margin: auto 0
+			a
+				float: left
+				margin-right: 40px
+				color: #58B9FF
+				display: flex
+				align-items: center
+				font-size: 15px
+				i
+					float: left
+					display: flex
+					margin-right: 12px
+					img
+						display: block
+				b
+					color: var(--white)
+					font-weight: 600
+				&:last-child
+					margin: 0
+
+.contact
+	width: 100%
+	margin-top: 55px
+	display: flex
+	flex-flow: wrap
+	&__info
+		float: left
+		width: 50%
+		padding-right: 50px
+		&-block
+			display: block
+			margin-top: 30px
+		&-item
+			display: flex
+			flex-direction: column
+			justify-content: center
+			margin-top: 45px
+			padding-left: 80px
+			min-height: 62px
+			position: relative
+			&:first-child
+				margin-top: 0
+			i
+				position: absolute
+				width: 62px
+				height: 62px
+				border-radius: 50%
+				top: 0
+				left: 0
+				display: flex
+				background: #F1F5F9
+				img
+					display: block
+					width: auto
+					height: auto
+					margin: auto
+			p
+				display: block
+				color: #4B5053
+				font-size: 14px
+			a
+				display: block
+				margin-top: 8px
+				font-size: 18px
+				color: #172129
+				b
+					font-weight: 700
+					font-size: 20px
+				span
+					color: #58B9FF
+	&__title
+		display: block
+		font-weight: 700
+		font-size: 22px
+	&__form
+		width: 50%
+		.form
+			&-group
+				margin-top: 25px
+		&-btn
+			width: 100%
+			display: flex
+			margin-top: 30px
+			.btn
+				float: right
+				margin: auto 0 auto auto
+			.check
+				float: left
+				margin: auto 0
+
+.check
+	position: relative
+	input
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		opacity: 0
+		z-index: 2
+		&:checked + p
+			&::after
+				opacity: 1
+	p
+		display: block
+		padding-left: 33px
+		font-size: 13px
+		&::before
+			content: ''
+			position: absolute
+			width: 20px
+			height: 20px
+			border: 1px solid #58B9FF
+			border-radius: 4px
+			top: calc(50% - 10px)
+			left: 0
+		&::after
+			content: ''
+			position: absolute
+			width: 12px
+			height: 12px
+			background: #58B9FF
+			border-radius: 2px
+			top: calc(50% - 6px)
+			left: 4px
+			opacity: 0
+
+.form
+	&-group
+		display: flex
+		flex-direction: column
+		position: relative
+		.btn
+			height: 46px
+			margin-top: auto
+		&.error
+			small
+				color: #F33B3B
+		small
+			display: block
+			margin-top: 7px
+			font-size: 12px
+		label
+			display: block
+			font-size: 14px
+			color: #172129
+		input
+			display: block
+			margin-top: 4px
+			width: 100%
+			border: 1px solid #E8EDF0
+			background: #F4F6F8
+			padding-left: 14px
+			height: 46px
+			font-size: 14px
+			border-radius: 6px
+			&[type=password] + i
+				position: absolute
+				width: 46px
+				height: 46px
+				bottom: 0
+				right: 0
+				z-index: 2
+				background: url(../img/icon-password.svg) center no-repeat
+				cursor: pointer
+			&:first-child
+				margin: 0
+		select
+			display: block
+			margin-top: 4px
+			width: 100%
+			border: 1px solid #E8EDF0
+			background: #F4F6F8
+			padding-left: 14px
+			height: 46px
+			font-size: 14px
+			border-radius: 6px
+			&:first-child
+				margin: 0
+		textarea
+			display: block
+			margin-top: 4px
+			width: 100%
+			border: 1px solid #E8EDF0
+			background: #F4F6F8
+			padding: 12px 14px
+			height: 102px
+			font-size: 14px
+			border-radius: 6px
+			&:first-child
+				margin: 0
+		&-block
+			width: calc(100% + 8px)
+			display: flex
+			margin: 4px -4px 0
+			&:first-child
+				margin-top: 0
+			input, select
+				width: calc(100% - 8px)
+				margin: 0 4px !important
+				&.medium
+					width: calc(50% - 8px)
+				&.small
+					width: calc(25% - 8px)
+
+.quest
+	position: relative
+	&__progress
+		position: absolute
+		width: 100%
+		height: 5px
+		top: 0
+		left: 0
+		right: 0
+		z-index: 5
+		background: #E5E7EA
+		span
+			float: left
+			width: 0%
+			height: 100%
+			background: var(--accent)
+			transition: width 1s
+	&__item
+		display: none
+		&.active
+			display: block
+	&__home
+		width: 100%
+		height: auto
+		min-height: 100vh
+		display: flex
+		&-block
+			margin: auto
+			width: 100%
+			max-width: 800px
+		&-logo
+			display: block
+			width: 275px
+			height: auto
+			margin: 0 auto
+		&-title
+			display: block
+			margin-top: 85px
+			text-align: center
+			font-weight: 700
+			font-size: 36px
+			text-align: center
+		&-sub
+			display: block
+			text-align: center
+			margin-top: 6px
+			font-weight: 600
+			font-size: 36px
+		&-desc
+			display: block
+			margin: 35px auto 0
+			max-width: 540px
+			font-size: 15px
+			line-height: 1.6
+			color: #5c6063
+			text-align: center
+		&-btn
+			width: 100%
+			display: flex
+			margin-top: 40px
+			.btn
+				margin: 0 auto
+	&__page
+		width: 100%
+		display: flex
+		flex-flow: wrap
+		min-height: 100vh
+		padding: 30px
+		&-bg
+			float: left
+			width: 50%
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 275px
+				height: 55px
+				left: 65px
+				top: 60px
+				background: url(../img/logo-white-all.svg) center/contain no-repeat
+			img
+				display: block
+				width: 100%
+				height: 100%
+				border-radius: 20px
+				object-fit: cover
+		&-form
+			display: flex
+			width: 50%
+			padding: 0 50px 0 80px
+		&-cot
+			margin: auto
+			width: 100%
+		&-title	
+			display: block
+			text-align: center
+			font-size: 32px
+			font-weight: 700
+	&__form
+		width: calc(100% + 16px)
+		display: flex
+		flex-flow: wrap
+		margin: 30px -8px 0
+		&-title
+			width: calc(100% - 16px)
+			display: block
+			margin: 40px 8px 0
+			font-weight: 700
+			font-size: 16px
+		&-btn
+			display: flex
+			margin: 40px 0 0
+			width: 100%
+			.btn
+				margin: 0 auto
+		.form
+			&-group
+				width: calc(100% - 16px)
+				margin: 20px 8px 0
+				&.medium
+					width: calc(50% - 16px)
+				&.small
+					width: calc(33.3333% - 16px)
+				&.min
+					width: calc(25% - 16px)
+	&__success
+		width: 100%
+		height: auto
+		min-height: 100vh
+		display: flex
+		background: #F5F9FC
+		&-block
+			margin: auto
+			width: 100%
+			max-width: 1000px
+			padding: 100px 110px 90px
+			background: var(--white)
+			box-shadow: 0 4px 16px 0 rgba(193, 200, 207, 0.3)
+			border-radius: 24px
+		&-logo
+			display: block
+			width: 284px
+			height: auto
+			margin: 0 auto
+		&-text
+			display: block
+			margin: 60px auto 0
+			font-size: 20px
+			line-height: 1.5
+			color: #5C6063
+			text-align: center
+		&-title
+			display: block
+			text-align: center
+			font-size: 32px
+			font-weight: 700
+		&-desc
+			display: block
+			margin-top: 40px
+			p
+				display: block
+				margin-top: 10px
+				font-size: 16px
+				line-height: 160%
+				color: #5C6063
+				&:first-child
+					margin: 0
+		&-btn
+			width: 100%
+			display: flex
+			margin-top: 50px
+			.btn
+				margin: 0 auto
+
+.hat
+	background: #F5FAFD
+	padding: 30px
+	height: auto
+	min-height: 250px
+	position: relative
+	&.min
+		min-height: 0
+		.hat
+			&__title
+				margin-top: 0
+		.row
+			padding: 55px 30px
+	.row
+		&.pos
+			height: 100%
+			position: relative
+	&__bg
+		position: absolute
+		width: calc(100% - 60px)
+		height: calc(100% - 60px)
+		top: 30px
+		left: 30px
+		z-index: 0
+		border-radius: 20px
+		overflow: hidden
+		img
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__title
+		display: block
+		margin-top: 40px
+		font-weight: 700
+		font-size: 36px
+		color: var(--white)
+		position: relative
+		z-index: 2
+	&__block
+		position: absolute
+		width: 100%
+		max-width: 1300px
+		left: 50%
+		transform: translateX(-50%)
+		bottom: -5px
+		z-index: 2
+		display: flex
+	&__btn
+		position: absolute
+		right: 30px
+		top: 50%
+		transform: translateY(-50%)
+		z-index: 4
+	&__item
+		float: left
+		width: calc(33.3333% - 20px)
+		margin: 0 10px
+		padding: 15px 15px 15px 122px
+		height: auto
+		min-height: 120px
+		backdrop-filter: blur(64px)
+		background: rgba(255, 255, 255, 0.76)
+		position: relative
+		border-radius: 16px
+		display: flex
+		flex-direction: column
+		&-circle
+			position: absolute
+			width: 70px
+			height: 70px
+			left: 28px
+			top: calc(50% - 35px)
+			s
+				display: block
+				width: calc(100% - 2px)
+				height: calc(100% - 2px)
+				border-radius: 50%
+				border: 1px solid var(--white)
+				margin: 1px
+				position: relative
+				z-index: 2
+				svg
+					display: block
+					width: 120%
+					height: 120%
+					margin: -10%
+					circle
+						width: 100%
+						height: 100%
+			i
+				position: absolute
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				z-index: 0
+				display: flex
+				img
+					display: block
+					width: auto
+					height: auto
+					margin: auto
+		&-block
+			margin: auto 0
+			width: 100%
+		&-name
+			display: block
+			font-size: 14px
+			font-weight: 600
+		&-price
+			display: block
+			margin-top: 5px
+			color: #193772
+			font-weight: 600
+			font-size: 24px
+		&-check
+			width: 100%
+			position: relative
+			margin: auto 0
+			input
+				position: absolute
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				opacity: 0
+				z-index: 1
+				&:checked + p::after
+					margin-left: 27px
+					background: #25C150
+			p
+				display: block
+				padding-left: 70px
+				font-size: 14px
+				font-weight: 600
+				&::before
+					content: ''
+					position: absolute
+					width: 55px
+					height: 28px
+					box-shadow: inset 0 4px 4px 0 rgba(207, 214, 226, 0.7)
+					background: var(--white)
+					border-radius: 20px
+					left: 0
+					top: calc(50% - 14px)
+					border: 1px solid #D5DEF2
+				&::after
+					content: ''
+					position: absolute
+					width: 24px
+					height: 24px
+					left: 2px
+					top: calc(50% - 12px)
+					background: #58B9FF
+					border: 1px solid #95d2ff
+					border-radius: 50%
+					transition: margin .3s, background .3s
+		&-info
+			position: absolute
+			right: 12px
+			top: 12px
+			i
+				display: block
+				width: 18px
+				height: 18px
+				background: url(../img/icon-info.svg) center/contain no-repeat
+				transition: background .5s
+			p
+				position: absolute
+				right: -5px
+				top: calc(100% + 8px)
+				width: 310px
+				height: auto
+				padding: 25px
+				background: var(--white)
+				box-shadow: 0 8px 12px 0 rgba(159, 181, 189, 0.4)
+				border-radius: 10px
+				font-size: 13px
+				line-height: 1.6
+				z-index: 10
+				visibility: hidden
+				opacity: 0
+				pointer-events: none
+				transition: visibility .5s, opacity .5s
+				&::before
+					content: ''
+					position: absolute
+					width: 8px
+					height: 8px
+					top: -3px
+					right: 10px
+					background: var(--white)
+					transform: rotate(45deg)
+	&__price
+		width: 100%
+		max-width: 415px
+		margin-top: 25px
+		padding: 20px 25px
+		backdrop-filter: blur(64px)
+		background: rgba(255, 255, 255, 0.2)
+		border-radius: 16px
+		p
+			display: block
+			font-size: 14px
+			font-weight: 600
+			color: var(--white)
+		b
+			display: block
+			margin-top: 6px
+			font-size: 28px
+			font-weight: 600
+			color: var(--white)
+
+.box
+	width: 100%
+	background: var(--white)
+	box-shadow: 0 4px 12px 0 rgba(201, 221, 228, 0.2)
+	border-radius: 16px
+	margin-top: 24px
+	&:first-child
+		margin: 0
+	&__title
+		width: 100%
+		display: flex
+		flex-flow: wrap
+		padding: 14px 30px
+		&-name
+			float: left
+			margin: auto 0
+			font-size: 21px
+			font-weight: 600
+			color: #172129
+		&-search
+			float: right
+			margin-left: auto
+			width: 360px
+			position: relative
+			button
+				position: absolute
+				width: 40px
+				height: 44px
+				top: 0
+				left: 0
+				background: url(../img/icon-search.svg) center no-repeat
+				z-index: 2
+			input
+				display: block
+				width: 100%
+				height: 44px
+				background: #f4f9fb
+				border: 1px solid #E8EDF0
+				padding: 0 15px 0 44px
+				font-size: 14px
+				color: var(--black)
+				border-radius: 6px
+				&::placeholder
+					color: #999FA5
+	&__form
+		width: 100%
+		padding: 23px 43px 43px
+		display: flex
+		flex-flow: wrap
+		&.min
+			max-width: 550px
+		&-btn
+			margin: 24px 8px 0
+			width: calc(100% - 16px)
+			.btn
+				width: 100%
+		.form
+			&-group
+				width: calc(100% - 16px)
+				margin: 20px 8px 0
+				&.medium
+					width: calc(50% - 16px)
+				&.small
+					width: calc(33.3333% - 16px)
+				&.min
+					width: calc(25% - 16px)
+
+.table
+	width: 100%
+	&.center
+		table
+			tr
+				th, td
+					text-align: center
+	table
+		width: 100%
+		tr
+			th
+				padding: 12px 16px
+				font-size: 15px
+				line-height: 162%
+				background: #ECF7FF
+				border: 1px solid #DEECF6
+				position: relative
+				text-align: left
+				&::before
+					content: ''
+					position: absolute
+					width: 100%
+					height: 2px
+					background: #58B9FF
+					bottom: -1px
+					left: 0
+			td
+				padding: 11px 16px
+				font-size: 15px
+				line-height: 170%
+				vertical-align: middle
+				border: 1px solid #E8EDF0
+				text-align: left
+				color: #4B5053
+				b
+					font-weight: 600
+
+.pagination
+	width: 100%
+	padding: 24px 26px
+	display: flex
+	flex-flow: wrap
+	&__info
+		float: left
+		margin: auto 0
+		font-size: 14px
+		color: #999fa5
+	&__list
+		float: right
+		margin-left: auto
+		p
+			float: left
+			margin-right: 15px
+			line-height: 38px
+			font-size: 15px
+			color: #999fa5
+		ul
+			float: left
+			li
+				float: left
+				margin-right: 4px
+				&:last-child
+					margin: 0
+				&.active
+					a
+						background: #58B9FF
+						color: var(--white)
+				a
+					display: block
+					width: 38px
+					height: 38px
+					border-radius: 6px
+					background: #eef4f9
+					text-align: center
+					line-height: 38px
+					font-size: 15px
+					color: #4b5053
+
+.badge
+	display: block
+	padding: 0 16px
+	height: 27px
+	line-height: 27px
+	text-align: center
+	border-radius: 6px
+	font-size: 14px
+	color: var(--white)
+	white-space: nowrap
+
+.title
+	width: 100%
+	display: flex
+	flex-flow: wrap
+	&__name
+		float: left
+		margin: auto 0
+		font-size: 32px
+		font-weight: 700
+	&__btn
+		float: right
+		margin: auto 0 auto auto
+
+.open-modal
+	cursor: pointer
+.modal
+	position: fixed
+	width: 100vw
+	height: 100vh
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 115
+	transition: visibility .5s, opacity .5s
+	&.hide
+		visibility: hidden
+		opacity: 0
+		.modal
+			&__cot
+				transform: translate(-50%,-50%) scale(0)
+		&.load
+			opacity: 1
+			visibility: visible
+			.modal
+				&__bg
+					background: rgba(28, 42, 54, .4) url(../img/load.svg) center/70px no-repeat
+	&__bg
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 0
+		background: rgba(28, 42, 54, 0.4)
+	&__cot
+		position: absolute
+		width: auto
+		height: auto
+		top: 50%
+		left: 50%
+		max-height: 100vh
+		transform: translate(-50%,-50%) scale(1)
+		overflow-x: hidden
+		overflow-y: auto
+		z-index: 1
+		transition: transform .5s
+		&.image
+			img
+				display: block
+				width: auto
+				height: auto
+				max-width: 98vw
+				max-height: 98vh
+	&__close
+		position: absolute
+		top: 10px
+		right: 10px
+		width: 40px
+		height: 40px
+		cursor: pointer
+		z-index: 2
+		background: url(../img/icon-close.svg) center no-repeat
+		opacity: 0.4
+		transition: opacity .5s, transform .5s
+	&__block
+		width: 100vw
+		height: auto
+		max-width: 600px
+		border-radius: 16px
+		background: #fff
+		position: relative
+		height: auto
+		overflow-x: hidden
+		overflow-y: auto
+		padding: 60px 50px
+	&__title
+		width: 100%
+		&-name
+			display: block
+			text-align: center
+			font-size: 22px
+			font-weight: 700
+		&-desc
+			width: 100%
+			margin-top: 15px
+			font-size: 16px
+			line-height: 1.6
+			text-align: center
+			&:first-child
+				margin: 0
+			b
+				font-weight: 600
+	&__btns
+		width: 100%
+		margin-top: 40px
+		display: flex
+		justify-content: center
+		p
+			float: left
+			margin: auto 0
+			width: 34px
+			font-size: 15px
+			text-align: center
+	&__list
+		width: 100%
+		max-width: 392px
+		margin: 38px auto 0
+		&-item
+			width: 100%
+			margin-top: 34px
+			p
+				display: block
+				font-size: 14px
+				color: #172129
+				margin-top: 12px
+				&:first-child
+					margin: 0
+				b
+					font-size: 15px
+					font-weight: 600
+	&__form
+		width: 100%
+		max-width: 375px
+		margin: 10px auto 0
+		.form
+			&-group
+				margin-top: 20px
+		.btn
+			width: 100%
+			margin-top: 24px
+
+@import '_1024'
+@import '_hover'
+@import '_767'
+@import '_375'
