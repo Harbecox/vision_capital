@@ -183,7 +183,7 @@
 
                         </div>
                         <div style="display: flex;justify-content: center;margin-top: 20px;">
-                            <a href="https://visioncapitalgf.com/register" class="btn">Open An Account</a>
+                            <a href="/register" class="btn">Open An Account</a>
                         </div>
                     </div>
                 </div>

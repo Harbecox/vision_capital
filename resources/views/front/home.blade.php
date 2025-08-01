@@ -42,13 +42,13 @@
                         <li><a href="#contacts">Contact us</a></li>
                     </ul>
                     <div class="header-nav">
-                        <a href="https://www.visioncapitalgf.com/login" class="btn btn-blue btn-transparent btn-small">Login</a>
-                        <a href="https://www.visioncapitalgf.com/register" class="btn btn-blue btn-small">Get Started</a>
+                        <a href="/login" class="btn btn-blue btn-transparent btn-small">Login</a>
+                        <a href="/register" class="btn btn-blue btn-small">Get Started</a>
                     </div>
                 </nav>
                 <div class="header-nav">
-                    <a href="https://www.visioncapitalgf.com/login" class="btn btn-blue btn-transparent btn-small">Login</a>
-                    <a href="https://www.visioncapitalgf.com/register" class="btn btn-blue btn-small">Get Started</a>
+                    <a href="/login" class="btn btn-blue btn-transparent btn-small">Login</a>
+                    <a href="/register" class="btn btn-blue btn-small">Get Started</a>
                 </div>
                 <div class="hamburger hamburger--vortex">
                     <div class="hamburger-box">
@@ -181,7 +181,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="https://www.visioncapitalgf.com/register" class="btn btn-blue btn-large d-none d-md-inline-flex">Open an Account</a>
+                            <a href="/register" class="btn btn-blue btn-large d-none d-md-inline-flex">Open an Account</a>
                         </div>
                     </div>
                     <div class="fund-item">
@@ -234,7 +234,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <a href="https://www.visioncapitalgf.com/register" class="btn btn-blue btn-large d-md-none">Open an Account</a>
+                        <a href="/register" class="btn btn-blue btn-large d-md-none">Open an Account</a>
                     </div>
                 </div>
             </div>
@@ -697,7 +697,7 @@
                                 </div>
                             </div>
                             <div class="fees-nav">
-                                <a href="https://www.visioncapitalgf.com/register" class="btn btn-blue">Open an Account</a>
+                                <a href="/register" class="btn btn-blue">Open an Account</a>
                                 <a href="#performance" class="btn btn-blue btn-transparent">Past Performance</a>
                             </div>
                         </div>
@@ -727,7 +727,7 @@
                     </div>
                     <div class="download-header">Based on past performance</div>
                     <div class="download">
-                        <a href="https://www.visioncapitalgf.com/pdf/1817-SUMMARY-R01.pdf" target="_blank" class="download-item">
+                        <a href="/pdf/1817-SUMMARY-R01.pdf" target="_blank" class="download-item">
                             <div class="download-item__row">
                                 <div class="download-item__img">
                                     <img src="/landing/img/pdf.png" alt="alt">
@@ -746,7 +746,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.visioncapitalgf.com/pdf/1834-ANNUAL-R01.pdf" target="_blank" class="download-item">
+                        <a href="/pdf/1834-ANNUAL-R01.pdf" target="_blank" class="download-item">
                             <div class="download-item__row">
                                 <div class="download-item__img">
                                     <img src="/landing/img/pdf.png" alt="alt">
@@ -765,7 +765,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.visioncapitalgf.com/pdf/1834-SEMI-R01.pdf" target="_blank" class="download-item">
+                        <a href="/pdf/1834-SEMI-R01.pdf" target="_blank" class="download-item">
                             <div class="download-item__row">
                                 <div class="download-item__img">
                                     <img src="/landing/img/pdf.png" alt="alt">
@@ -1411,7 +1411,7 @@
                     </div>
                 </div>
                 <div class="perfomance-nav">
-                    <a href="https://www.visioncapitalgf.com/register" class="btn btn-blue">Open an Account</a>
+                    <a href="/register" class="btn btn-blue">Open an Account</a>
                 </div>
             </div>
         </section>
@@ -1528,7 +1528,7 @@
                     </div>
                     <div class="track-content">
                         <div class="download">
-                            <a href="https://www.visioncapitalgf.com/pdf/1817-SUMMARY-R01.pdf" target="_blank" class="download-item">
+                            <a href="/pdf/1817-SUMMARY-R01.pdf" target="_blank" class="download-item">
                                 <div class="download-item__row">
                                     <div class="download-item__img">
                                         <img src="/landing/img/pdf.png" alt="alt">
@@ -1547,7 +1547,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="https://www.visioncapitalgf.com/pdf/1834-ANNUAL-R01.pdf" target="_blank" class="download-item">
+                            <a href="/pdf/1834-ANNUAL-R01.pdf" target="_blank" class="download-item">
                                 <div class="download-item__row">
                                     <div class="download-item__img">
                                         <img src="/landing/img/pdf.png" alt="alt">
@@ -1566,7 +1566,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="https://www.visioncapitalgf.com/pdf/1834-SEMI-R01.pdf" target="_blank" class="download-item">
+                            <a href="/pdf/1834-SEMI-R01.pdf" target="_blank" class="download-item">
                                 <div class="download-item__row">
                                     <div class="download-item__img">
                                         <img src="/landing/img/pdf.png" alt="alt">
