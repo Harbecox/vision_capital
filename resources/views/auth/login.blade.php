@@ -33,7 +33,7 @@
                     @endif
                 </div>
                 <br>
-                {!! htmlFormSnippet() !!}
+{{--                {!! htmlFormSnippet() !!}--}}
                 <div class="login-signup">
 
                     <button type="submit" class="btn btn-primary">

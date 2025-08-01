@@ -42,7 +42,7 @@
 
                 </div>
                 <div class="form-group large" >
-                    {!! htmlFormSnippet() !!}
+{{--                    {!! htmlFormSnippet() !!}--}}
                 </div>
                 @csrf
                 <div class="quest__success-btn">

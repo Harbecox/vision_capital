@@ -3,19 +3,7 @@
 @section("prc")100% @endsection
 
 @section('step')
-    <!--  ClickCease.com Conversion tracking-->
-    <script type="text/javascript">
-        ccConVal = 0;
-        var script = document.createElement("script");
-        script.async = true;
-        script.type = "text/javascript";
-        var target = 'https://www.clickcease.com/monitor/cccontrack.js';
-        script.src = target; var elem = document.head; elem.appendChild(script);
-    </script>
-    <noscript>
-        <a href="https://www.clickcease.com" rel="nofollow"><img src="https://monitor.clickcease.com/conversions/conversions.aspx?value=0" alt="ClickCease"/></a>
-    </noscript>
-    <!--  ClickCease.com Conversion tracking-->
+
     <div class="quest__item active">
         <div class="quest__success">
             <div class="quest__success-block">
